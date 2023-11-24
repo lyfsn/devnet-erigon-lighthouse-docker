@@ -3,6 +3,7 @@ version: "3.8"
 services:
   execution:
     image: ethpandaops/erigon:2.53.0
+    user: "root"
     command:
       --log.console.verbosity=3
       --datadir=/execution-data
@@ -39,6 +40,7 @@ services:
 
   beacon:
     image: sigp/lighthouse:v4.5.0
+    user: "root"
     command:
       - lighthouse
       - beacon_node
@@ -87,6 +89,7 @@ services:
 
   # alidator:
   #   image: sigp/lighthouse:v4.5.0
+  #   user: "root"
   #   command:
   #     - lighthouse
   #     - validator_client
