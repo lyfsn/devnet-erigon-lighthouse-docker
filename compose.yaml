@@ -87,7 +87,7 @@ services:
       - execution
     restart: unless-stopped
 
-  alidator:
+  validator:
     image: sigp/lighthouse:v4.5.0
     user: "root"
     command:
