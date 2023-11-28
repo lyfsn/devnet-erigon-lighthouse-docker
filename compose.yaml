@@ -112,8 +112,8 @@ services:
       - ./el-cl-genesis-data:/el-cl-genesis-data
       - ./validator-keys:/validator-keys
     ports:
-      - "8142:5042"
-      - "8164:5064"
+      - "7242:5042"
+      - "7264:5064"
     depends_on:
       - beacon
     restart: unless-stopped
