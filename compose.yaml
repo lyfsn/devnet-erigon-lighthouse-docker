@@ -49,10 +49,10 @@ services:
       - --testnet-dir=/el-cl-genesis-data/custom_config_data
       - --disable-enr-auto-update
       - --enr-address=${IP_ADDRESS}
-      - --enr-udp-port=11100
-      - --enr-tcp-port=11100
+      - --enr-udp-port=11200
+      - --enr-tcp-port=11200
       - --listen-address=0.0.0.0
-      - --port=11100
+      - --port=11200
       - --http
       - --http-address=0.0.0.0
       - --http-port=4000
@@ -82,8 +82,8 @@ services:
       - ./consensus-data:/consensus-data 
       - ./el-cl-genesis-data:/el-cl-genesis-data
     ports:
-      - "11200:11100/udp"
-      - "11200:11100/tcp" 
+      - "11200:11200/udp"
+      - "11200:11200/tcp" 
       - "4400:4000"
       - "7254:5054"
     depends_on:
