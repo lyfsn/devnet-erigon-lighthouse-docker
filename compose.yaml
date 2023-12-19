@@ -45,7 +45,7 @@ services:
     command:
       - lighthouse
       - beacon_node
-      - --debug-level=info
+      - --debug-level=debug
       - --datadir=/consensus-data
       - --testnet-dir=/el-cl-genesis-data/custom_config_data
       - --disable-enr-auto-update
