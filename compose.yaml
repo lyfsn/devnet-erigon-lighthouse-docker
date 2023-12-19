@@ -69,8 +69,9 @@ services:
       - --metrics-address=0.0.0.0
       - --metrics-allow-origin=*
       - --metrics-port=5054
-      - --trusted-peers=16Uiu2HAm4GXc2aYZkdfHvvn56s6zEdoSAwdiNcGkzvXX5y4MX4U4
-      - --boot-nodes=enr:-Ma4QJMWAV4z4B_yZZh7OH5tc08VoVFoqmjjYwSZV8E-ubc2Rhy9xEZnnbMFsysrsZtjYiVMZWoMolqEmlFR-wbivJKCBuGHYXR0bmV0c4j__________4RldGgykCO-TCBQAAA4QEIPAAAAAACCaWSCdjSCaXCEWGNebYRxdWljgir5iXNlY3AyNTZrMaECg2F8MDnul4GF8qWBFENgqaPA5Q9I-qP3uGlabDJyAl2Ic3luY25ldHMPg3RjcIIq-IN1ZHCCKvg
+      # - --trusted-peers=16Uiu2HAm4GXc2aYZkdfHvvn56s6zEdoSAwdiNcGkzvXX5y4MX4U4
+      # - --boot-nodes=enr:-Ma4QJMWAV4z4B_yZZh7OH5tc08VoVFoqmjjYwSZV8E-ubc2Rhy9xEZnnbMFsysrsZtjYiVMZWoMolqEmlFR-wbivJKCBuGHYXR0bmV0c4j__________4RldGgykCO-TCBQAAA4QEIPAAAAAACCaWSCdjSCaXCEWGNebYRxdWljgir5iXNlY3AyNTZrMaECg2F8MDnul4GF8qWBFENgqaPA5Q9I-qP3uGlabDJyAl2Ic3luY25ldHMPg3RjcIIq-IN1ZHCCKvg
+      - --checkpoint-sync-url=http://88.99.94.109:4200
       - --enable-private-discovery=true
       - --target-peers=16
     volumes:
